@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addiction Awareness Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+        /* Chatbot Styles */
+        .chat-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 300px;
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: none; /* Initially hidden */
+            z-index: 1000;
+        }
+        .chat-header {
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .chat-messages {
+            max-height: 300px;
+            overflow-y: auto;
+            padding: 10px;
+        }
+        .chat-input {
+            display: flex;
+            padding: 10px;
+        }
+        .chat-input input {
+            flex: 1;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .chat-input button {
+            margin-left: 5px;
+            border: none;
+            background: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container my-4">
+    <h1 class="text-center mb-4">Addiction Awareness Blog</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="https://imgs.search.brave.com/vJmt__rQ8ynYithxR7VN1OuOt03kilePMNS-OQwIDk4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE5/NDQ3MzU4My9waG90/by9nYW1pbmctaXMt/c3VjaC1hLWZ1bi5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/RUIxcXpRUjFHOXg3/MkVmbFZWOHk0RFNi/dm4wNERtdE9NN2pM/eHYzUDNtVT0" class="card-img-top" alt="Gaming Addiction">
+                <div class="card-body">
+                    <h5 class="card-title">Gaming Addiction</h5>
+                    <p class="card-text">Exploring the impact of excessive gaming on mental health and daily life.</p>
+                    <a href="2-gaming-addiction.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="https://imgs.search.brave.com/fgIZMna5gWdd0urewJ-S7_eKr6nKhbZz8V0doefBoSA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTMz/OTU3NzAxL3Bob3Rv/L3doaXNrZXktYW5k/LW5hdHVyYWwtaWNl/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1zclRCY3U0aTZH/SGJQdDF6aXpKYVFS/c3ZpTW9MaWVvTnNV/TDlTblhCMkcwPQ" class="card-img-top" alt="Alcohol Addiction">
+                <div class="card-body">
+                    <h5 class="card-title">Alcohol Addiction</h5>
+                    <p class="card-text">Discussing the effects of alcohol dependency and resources for recovery.</p>
+                    <a href="3-alcohol-addiction.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="https://imgs.search.brave.com/plY5s0T2tTKkQoU6ogqhqQIH4VcZ_Mo6owhWEqTjMmw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQ1/NDAzNTA5Ny9waG90/by9kcnVnLWFkZGlj/dGlvbi5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9WGszaEJK/Sld4d0htWlY0RVdk/bUN5R2g2aXhER1Jt/YkZSd3NrZE1zQ09M/dz0" class="card-img-top" alt="Drug Addiction">
+                <div class="card-body">
+                    <h5 class="card-title">Drug Addiction</h5>
+                    <p class="card-text">Understanding the complexities of drug addiction and exploring effective pathways to recovery.</p>
+                    <a href="4-drug-addiction.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="mt-5">Impactful Videos on Addiction</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h5>Gaming Addiction</h5>
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/Y3R5q8P-BH4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-4">
+            <h5>Alcohol Addiction</h5>
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/8OeP2A3SE9g" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-4">
+            <h5>Drug Addiction</h5>
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/sXhP9r1VeOQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Chatbot Trigger Button -->
+    <button id="chatbotToggle" class="btn btn-info mt-4">Chat with us!</button>
+
+    <!-- Chatbot Container -->
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">Chatbot</div>
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Type your message..." />
+            <button id="sendBtn">Send</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Addiction Awareness Blog. Together, we can make a difference.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Simple Chatbot Functionality
+    const chatbotMessages = [
+        "Hello! How can I help you today?",
+        "If you're struggling with addiction, please remember that help is available.",
+        "You can read more about different types of addiction on our blog.",
+        "Feel free to ask me any questions about addiction or recovery.",
+        "I'm here to provide support and information."
+    ];
+
+    // Toggle chat container
+    document.getElementById('chatbotToggle').onclick = function() {
+        const chatContainer = document.getElementById('chatContainer');
+        chatContainer.style.display = chatContainer.style.display === 'none' ? 'block' : 'none';
+        document.getElementById('chatMessages').innerHTML = ''; // Clear previous messages
+        addBotMessage(chatbotMessages[Math.floor(Math.random() * chatbotMessages.length)]);
+    };
+
+    // Send message
+    document.getElementById('sendBtn').onclick = function() {
+        const userInput = document.getElementById('userInput');
+        if (userInput.value.trim() !== '') {
+            addUserMessage(userInput.value);
+            userInput.value = ''; // Clear input field
+            addBotMessage(chatbotMessages[Math.floor(Math.random() * chatbotMessages.length)]);
+        }
+    };
+
+    // Add user message
+    function addUserMessage(message) {
+        const chatMessages = document.getElementById('chatMessages');
+        chatMessages.innerHTML += `<div><strong>You:</strong> ${message}</div>`;
+        chatMessages.scrollTop = chatMessages.scrollHeight; // Scroll to the bottom
+    }
+
+    // Add bot message
+    function addBotMessage(message) {
+        const chatMessages = document.getElementById('chatMessages');
+        chatMessages.innerHTML += `<div><strong>Bot:</strong> ${message}</div>`;
+        chatMessages.scrollTop = chatMessages.scrollHeight; // Scroll to the bottom
+    }
+</script>
+
+</body>
+</html>
